@@ -1,0 +1,42 @@
+.modal {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #bbb3b3;
+}
+
+
+@media screen and (min-width:560px) {
+    .modal{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.modal__header {
+    float: right;
+}
+
+.main__text {
+    text-align: justify;
+}
+
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+
+
+.footer__button.footer__button--red {
+    background-color: red;
+    margin-right: 10px;
+}
+
+.footer__button.footer__button--green {
+    background-color: green;
+}
+
