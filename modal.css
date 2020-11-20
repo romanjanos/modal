@@ -1,28 +1,49 @@
+.btn {
+    cursor: pointer;
+}
+
+body.modal__open .modal__frame {
+    opacity: 1;
+    height: auto;
+    overflow: visible;}
+
+.modal__frame {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    height: 0;
+    overflow: hidden;
+}
+
 .modal {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid;
     padding: 10px;
     box-shadow: 2px 2px 2px 2px #bbb3b3;
+    background-color: #ffffff;
 }
 
-
-@media screen and (min-width:560px) {
-    .modal{
-        width:50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.modal__header {
+.modal__button {
     float: right;
+    }
+
+.modal__button__header {
+    cursor: pointer;
 }
 
 .main__text {
     text-align: justify;
 }
-
 
 footer {
     display: flex;
@@ -30,13 +51,19 @@ footer {
     justify-content: flex-end;
 }
 
-
 .footer__button.footer__button--red {
     background-color: red;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .footer__button.footer__button--green {
     background-color: green;
+    cursor: pointer;
 }
 
+@media screen and (min-width:560px) {
+    .modal{
+        width:50%;
+    }
+}
