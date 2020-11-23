@@ -1,11 +1,14 @@
 .btn {
     cursor: pointer;
+    margin: auto;
+    display: flex;
 }
 
 body.modal__open .modal__frame {
     opacity: 1;
     height: auto;
-    overflow: visible;}
+    overflow: visible;
+}
 
 .modal__frame {
     position: fixed;
